@@ -2,5 +2,28 @@
 
 
 *{
+    box-sizing: border-box;
     font-family: 'Opan Snas';
+}
+
+header{
+    background-color: #4D41C0;
+    color : #fff;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+html,body{
+    background-color: #f0efef;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
 }
