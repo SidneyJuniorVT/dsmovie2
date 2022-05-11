@@ -1,14 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600&display=swap');
 
 
+:root {
+    --color-primary:  #4D41C0;
+    --bg-gray: #ddd;
+    --white: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+}
+
 *{
     box-sizing: border-box;
     font-family: 'Opan Snas';
 }
 
 header{
-    background-color: #4D41C0;
-    color : #fff;
+    background-color: var(--color-primary);
+    color : var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center ;
 
 }
 
@@ -18,12 +31,32 @@ nav{
     justify-content: space-between;
 }
 
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
+
 
 html,body{
-    background-color: #f0efef;
+    background-color: var(--bg-gray);
 }
 
 a, a:hover {
     text-decoration: none;
     color: unset;
+}
+
+.dsmovie-contact-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.dsmovie-contact-container img{
+    margin: 10px;
 }
